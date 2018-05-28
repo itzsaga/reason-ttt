@@ -8,8 +8,8 @@ let make = _children => {
   render: _self =>
     <div>
       <div className="title">
-        (ReasonReact.stringToElement("Tic Tac Toe"))
+        (ReasonReact.string("Tic Tac Toe"))
       </div>
-      <Game />
+      /* <Game /> */
     </div>,
 };
