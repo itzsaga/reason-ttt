@@ -9,6 +9,6 @@ let make = _children => {
       <div className="title">
         (toString("Tic Tac Toe"))
       </div>
-      /* <Game /> */
+      <Game />
     </div>,
 };
