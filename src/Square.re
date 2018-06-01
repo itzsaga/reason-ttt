@@ -9,12 +9,12 @@ let getClass = (gameState: gameState, field: field) =>
 
 let isFinished = (value: gameState) =>
   switch (value) {
-  | Winnner(_) => true
+  | Winner(_) => true
   | _ => false
   };
 
 let toValue = (field: field) =>
-  switch field {
+  switch (field) {
   | Marked(Cross) => "X"
   | Marked(Circle) => "O"
   | Empty => ""
