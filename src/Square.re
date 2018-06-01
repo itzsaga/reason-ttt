@@ -13,6 +13,13 @@ let isFinished = (value: gameState) =>
   | _ => false
   };
 
+let toValue = (field: field) =>
+  switch field {
+  | Marked(Cross) => "X"
+  | Marked(Circle) => "O"
+  | Empty => ""
+  };
+
 let component = ReasonReact.statelessComponent("Square");
 
 let make = (~value: field, ~gameState: gameState, ~onMark, _children) => {
