@@ -19,7 +19,7 @@ let make = (~state: state, ~onMark, ~onRestart, _children) => {
              />
            )
         |> Array.of_list
-        |> ReasonReact.arrayToElement
+        |> ReasonReact.array
       )
     </div>,
 };
