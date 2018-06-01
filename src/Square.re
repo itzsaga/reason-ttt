@@ -7,6 +7,12 @@ let getClass = (gameState: gameState, field: field) =>
   | _ => "square"
   };
 
+let isFinished = (value: gameState) =>
+  switch (value) {
+  | Winnner(_) => true
+  | _ => false
+  };
+
 let component = ReasonReact.statelessComponent("Square");
 
 let make = (~value: field, ~gameState: gameState, ~onMark, _children) => {
