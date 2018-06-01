@@ -32,4 +32,4 @@ let make = _children => {
         onMark=(reduce(id => ClickSquare(id)))
       />
     </div>,
-}
+};
